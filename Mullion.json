@@ -3,7 +3,7 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "title": "Mullion",
     "allOf": [{"$ref":"https://hypar.io/Schemas/GeometricElement.json"}],
-    "required": ["Profile","discriminator"],
+    "required": ["Profile","CenterLiine","discriminator"],
     "discriminator": "discriminator",
     "x-namespace": "Test.Foo.Bar",
     "properties": {
@@ -13,6 +13,10 @@
         "Profile": {
             "description": "The cross-section of the mullion.",
             "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+        },
+        "CenterLine":{
+            "description": "The center line of the mullion.",
+            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
         }
     }
 }
