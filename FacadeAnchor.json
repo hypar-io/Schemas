@@ -14,5 +14,6 @@
             "description": "The location of the facade anchor.",
             "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
         }
-    }
+    },
+    "additionalProperties": false
 }
