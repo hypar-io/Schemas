@@ -17,6 +17,10 @@
         "CenterLine":{
             "description": "The center line of the mullion.",
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        },
+        "Length": {
+            "description": "The length of the mullion.",
+            "$ref": "https://hypar.io/Schemas/Properties/NumericProperty.json"
         }
     }
 }
