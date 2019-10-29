@@ -22,5 +22,6 @@
             "description": "The length of the mullion.",
             "$ref": "https://hypar.io/Schemas/Properties/NumericProperty.json"
         }
-    }
+    },
+    "additionalProperties": false
 }
