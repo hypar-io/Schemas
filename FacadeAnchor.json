@@ -1,1 +1,18 @@
-
+{
+    "$id":"https://raw.githubusercontent.com/hypar-io/UserElementSchemaTest/master/FacadeAnchor.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "FacadeAnchor",
+    "allOf": [{"$ref":"https://hypar.io/Schemas/GeometricElement.json"}],
+    "required": ["Location","discriminator"],
+    "discriminator": "discriminator",
+    "x-namespace": "Test.Foo.Bar",
+    "properties": {
+        "discriminator": {
+            "type":"string"
+        },
+        "Location": {
+            "description": "The location of the facade anchor.",
+            "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+        }
+    }
+}
