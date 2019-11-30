@@ -1,0 +1,53 @@
+{
+  "$id": "https://hypar.io/RoomsByProgram/schemas/RoomDefinition.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A room definition derived from CSV characteristics.",
+  "title": "RoomDefinition",
+  "x-namespace": "Elements",
+  "type": [ "object", "null" ],
+  "allOf": [ { "$ref": "https://hypar.io/Schemas/Element.json" } ],
+  "required": [ "discriminator", "Name", "Number", "Level", "Group", "Length", "Width", "Area", "Ratio" ],
+  "discriminator": "discriminator",
+  "properties": {
+    "discriminator": {
+      "type": "string"
+    },
+    "Name": {
+      "description": "The name of the room.",
+      "type": "string"
+    },
+    "Number": {
+      "description": "The number of the room.",
+      "type": "string"
+    },
+    "Level": {
+      "description": "The desired level on which to place the room.",
+      "type": "string"
+    },
+    "Group": {
+      "description": "The group in which to place the room.",
+      "type": "string"
+    },
+    "Length": {
+      "description": "The desired length of the room.",
+      "type": "number"
+    },
+    "Width": {
+      "description": "The desired width of the room.",
+      "type": "number"
+    },
+    "Area": {
+      "description": "The desired area of the room.",
+      "type": "number"
+    },
+    "Ratio": {
+      "description": "The desired ratio of length to width when defining a room by area.",
+      "type": "number"
+    },
+    "Order": {
+      "description": "The desired placement order of the room.",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
+}
