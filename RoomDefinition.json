@@ -20,7 +20,7 @@
       "description": "The desired level on which to place the room.",
       "type": "string"
     },
-    "Group": {
+    "Grouping": {
       "description": "The group in which to place the room.",
       "type": "string"
     },
