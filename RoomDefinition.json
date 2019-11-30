@@ -12,10 +12,6 @@
     "discriminator": {
       "type": "string"
     },
-    "Name": {
-      "description": "The name of the room.",
-      "type": "string"
-    },
     "Number": {
       "description": "The number of the room.",
       "type": "string"
