@@ -24,20 +24,16 @@
       "description": "The group in which to place the room.",
       "type": "string"
     },
+    "Proximity": {
+      "description": "Desired proximity to another model element or feature.",
+      "type": "string"
+    },    
     "Length": {
       "description": "The desired length of the room.",
       "type": "number"
     },
-    "Width": {
-      "description": "The desired width of the room.",
-      "type": "number"
-    },
     "Area": {
       "description": "The desired area of the room.",
-      "type": "number"
-    },
-    "Ratio": {
-      "description": "The desired ratio of length to width when defining a room by area.",
       "type": "number"
     },
     "Order": {
