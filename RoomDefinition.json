@@ -1,7 +1,7 @@
 {
   "$id": "https://hypar.io/RoomDefsByCSV/schemas/RoomDefinition.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "A room definition derived from CSV characteristics.",
+  "description": "A room definition for space planning.",
   "title": "RoomDefinition",
   "x-namespace": "Elements",
   "type": "object",
