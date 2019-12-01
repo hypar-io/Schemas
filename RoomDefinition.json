@@ -4,7 +4,7 @@
   "description": "A room definition derived from CSV characteristics.",
   "title": "RoomDefinition",
   "x-namespace": "Elements",
-  "type": [ "object", "null" ],
+  "type": "object",
   "allOf": [ { "$ref": "https://hypar.io/Schemas/Element.json" } ],
   "required": [ "discriminator", "Number", "Level", "Grouping", "Proximity", "Length", "Area", "Order" ],
   "discriminator": "discriminator",
