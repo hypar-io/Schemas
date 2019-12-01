@@ -6,12 +6,9 @@
   "x-namespace": "Elements",
   "type": "object",
   "allOf": [ { "$ref": "https://hypar.io/Schemas/Element.json" } ],
-  "required": [ "discriminator", "Number", "Level", "Grouping", "Proximity", "Length", "Area", "Order" ],
+  "required": [ "Number", "Level", "Grouping", "Proximity", "Length", "Area", "Order" ],
   "discriminator": "discriminator",
   "properties": {
-    "discriminator": {
-      "type": "string"
-    },
     "Number": {
       "description": "The number of the room.",
       "type": "string"
