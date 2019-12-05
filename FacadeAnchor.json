@@ -1,5 +1,5 @@
 {
-    "$id":"https://raw.githubusercontent.com/hypar-io/UserElementSchemaTest/master/FacadeAnchor.json",
+    "$id":"https://raw.githubusercontent.com/hypar-io/Schemas/master/FacadeAnchor.json",
     "$schema": "http://json-schema.org/draft-07/schema",
     "title": "FacadeAnchor",
     "allOf": [{"$ref":"https://hypar.io/Schemas/GeometricElement.json"}],
