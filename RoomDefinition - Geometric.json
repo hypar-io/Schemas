@@ -1,0 +1,42 @@
+{
+  "$id": "https://hypar.io/RoomDefsByCSV/schemas/RoomDefinition.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A room definition for space planning.",
+  "title": "RoomDefinition",
+  "x-namespace": "Elements",
+  "type": "object",
+  "allOf": [ { "$ref": "https://hypar.io/Schemas/GeometricElement.json" } ],
+  "required": [ "Number", "Level", "Grouping", "Proximity", "Length", "Area", "Order" ],
+  "discriminator": "discriminator",
+  "properties": {
+    "Number": {
+      "description": "The number of the room.",
+      "type": "string"
+    },
+    "Level": {
+      "description": "The desired level on which to place the room.",
+      "type": "string"
+    },
+    "Grouping": {
+      "description": "The spatial grouping with other rooms.",
+      "type": "string"
+    },
+    "Proximity": {
+      "description": "Desired proximity to another model element or feature.",
+      "type": "string"
+    },    
+    "Length": {
+      "description": "The desired length of the room.",
+      "type": "number"
+    },
+    "Area": {
+      "description": "The desired area of the room.",
+      "type": "number"
+    },
+    "Order": {
+      "description": "The desired placement order of the room.",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
+}
