@@ -1,0 +1,22 @@
+{
+  "$id": "https://hypar.io/RoomDefsByCSV/schemas/RoomDefinition.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A perimeter excluding other elements.",
+  "title": "Exclusion",
+  "x-namespace": "Elements",
+  "type": "object",
+  "allOf": [ { "$ref": "https://hypar.io/Schemas/Element.json" } ],
+  "required": [ "Perimeter", "Elevation" ],
+  "discriminator": "discriminator",
+  "properties": {
+    "Perimeter": {
+      "description": "The Exclusion perimeter.",
+      "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"      
+    },
+    "Elevation": {
+      "description": "The elevation in meters of the Exclusion.",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
+}
