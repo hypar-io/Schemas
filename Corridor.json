@@ -1,0 +1,47 @@
+{
+    "$id": "https://hypar.io/BuildingBlocks/schemas/corridor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Represents a single contiguous corridor that may consist of multiple intersecting passageways.",
+    "title": "Corridor",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
+    "required": ["discriminator", "Perimeter", "Direction", "Rotation", "Elevation", "Height", "Area", "Number"],
+    "discriminator": "discriminator",
+  "properties": {
+    "discriminator": {
+      "type": "string"
+    }, 
+    "Perimeter": {
+      "description": "The id of the polygon to extrude.",
+      "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+    },
+    "Direction": {
+      "description": "The direction in which to extrude.",
+      "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+    },
+    "Rotation": {
+      "description": "The rotation in degrees of the corridor.",
+      "type": "number"
+    },    
+    "Elevation": {
+      "description": "The elevation of the corridor.",
+      "type": "number",
+      "minimum": 0
+    },
+    "Height": {
+      "description": "The height of the corridor.",
+      "type": "number",
+      "minimum": 0
+    },
+    "Area": {
+      "description": "The area of the corridor.",
+      "type": "number"
+    },
+    "Number": {
+      "description": "The number of the corridor.",
+      "type": "string"
+    }      
+  },
+    "additionalProperties": false
+}
