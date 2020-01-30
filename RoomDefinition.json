@@ -9,32 +9,32 @@
   "required": [ "Number", "Level", "Grouping", "Proximity", "Length", "Area", "Order" ],
   "discriminator": "discriminator",
   "properties": {
-    "Number": {
-      "description": "The number of the room.",
+    "Suite Name": {
+      "description": "Name of the suite assigned to the room.",
       "type": "string"
     },
-    "Level": {
-      "description": "The desired level on which to place the room.",
+    "Suite Number": {
+      "description": "Number of the suite assigned to the room.",
       "type": "string"
     },
-    "Grouping": {
-      "description": "The spatial grouping with other rooms.",
+    "Department": {
+      "description": "Name of the department assigned to the room.",
       "type": "string"
     },
-    "Proximity": {
-      "description": "Desired proximity to another model element or feature.",
+    "Name": {
+      "description": "Name of the room.",
       "type": "string"
-    },    
-    "Length": {
-      "description": "The desired length of the room.",
+    },      
+    "Quantity": {
+      "description": "Desired quantity of this room.",
       "type": "number"
     },
     "Area": {
-      "description": "The desired area of the room.",
+      "description": "Desired area of the room.",
       "type": "number"
     },
-    "Order": {
-      "description": "The desired placement order of the room.",
+    "Ratio": {
+      "description": "Desired ratio of the X to Y dimensions of the room.",
       "type": "number"
     }
   },
