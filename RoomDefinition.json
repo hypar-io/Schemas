@@ -6,7 +6,7 @@
   "x-namespace": "Elements",
   "type": "object",
   "allOf": [ { "$ref": "https://hypar.io/Schemas/Element.json" } ],
-  "required": [ "Suite Name", "Suite Number", "Department", "Name", "Quantity", "Area", "Ratio" ],
+  "required": [ "Suite Name", "Suite Number", "Department", "Name", "Quantity", "Area", "Ratio", "discriminator" ],
   "discriminator": "discriminator",
   "properties": {
     "Suite Name": {
@@ -17,23 +17,23 @@
       "description": "Number of the suite assigned to the room.",
       "type": "string"
     },
-    "Department": {
+    "Room Department": {
       "description": "Name of the department assigned to the room.",
       "type": "string"
     },
-    "Name": {
+    "Room Name": {
       "description": "Name of the room.",
       "type": "string"
     },      
-    "Quantity": {
-      "description": "Desired quantity of this room.",
+    "Room Quantity": {
+      "description": "Desired quantity of the room.",
       "type": "number"
     },
-    "Area": {
+    "Room Area": {
       "description": "Desired area of the room.",
       "type": "number"
     },
-    "Ratio": {
+    "Room Dimension Ratio": {
       "description": "Desired ratio of the X to Y dimensions of the room.",
       "type": "number"
     }
