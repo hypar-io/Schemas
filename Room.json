@@ -6,7 +6,7 @@
     "x-namespace": "Elements",
     "type": ["object", "null"],
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
-    "required": ["discriminator", "Perimeter", "Direction", "Rotation", "Elevation", "Height", "Area", "Number"],
+    "required": ["discriminator", "Perimeter", "Direction", "Suite Name", "Suite Number", "Department", "Number", "Design Area", "Design Ratio", "Rotation", "Elevation", "Height", "Area" ],
     "discriminator": "discriminator",
   "properties": {
     "discriminator": {
@@ -20,6 +20,30 @@
       "description": "The direction in which to extrude.",
       "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
     },
+    "Suite Name": {
+      "description": "Name of the suite assigned to the room.",
+      "type": "string"
+    },
+    "Suite Number": {
+      "description": "Number of the suite assigned to the room.",
+      "type": "string"
+    },
+    "Department": {
+      "description": "Name of the department assigned to the room.",
+      "type": "string"
+    }, 
+    "Number": {
+      "description": "The number of the room.",
+      "type": "string"
+    },     
+    "Design Area": {
+      "description": "Desired area of the room.",
+      "type": "number"
+    },
+    "Design Ratio": {
+      "description": "Desired ratio of the X to Y dimensions of the room.",
+      "type": "number"
+    },    
     "Rotation": {
       "description": "The rotation in degrees of the room.",
       "type": "number"
@@ -37,11 +61,7 @@
     "Area": {
       "description": "The area of the room.",
       "type": "number"
-    },
-    "Number": {
-      "description": "The number of the room.",
-      "type": "string"
-    }      
+    }    
   },
     "additionalProperties": false
 }
