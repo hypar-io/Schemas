@@ -1,0 +1,29 @@
+{
+    "$id": "https://hypar.io/schemas/Level.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A wall drawn using the elevation profile",
+    "title": "Level",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],  
+    "required": ["discriminator", "Elevation"],
+    "discriminator": "discriminator",
+    "properties": {
+        "discriminator": {
+          "type": "string"
+        },      
+        "Profile": {
+            "description": "The profile, which includes openings that will be extruded.",
+            "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+        },
+        "Thickness": {
+            "description": "The overall thickness of the wall",
+            "type": "number"
+        },
+        "Centerline": {
+            "description": "The Centerline of the wall",
+            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        }         
+    },
+    "additionalProperties": false
+}
