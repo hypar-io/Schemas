@@ -2,7 +2,7 @@
     "$id": "https://hypar.io/schemas/Level.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A wall drawn using the elevation profile",
-    "title": "Level",
+    "title": "Wall",
     "x-namespace": "Elements",
     "type": ["object", "null"],
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],  
