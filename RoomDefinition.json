@@ -6,7 +6,7 @@
   "x-namespace": "Elements",
   "type": "object",
   "allOf": [ { "$ref": "https://hypar.io/Schemas/Element.json" } ],
-  "required": [ "Suite Name", "Suite Number", "Department", "Name", "Quantity", "Area", "Ratio", "discriminator" ],
+  "required": [ "Suite Name", "Suite Number", "Room Department", "Room Name", "Room Quantity", "Room Area", "Room Dimension Ratio", "discriminator" ],
   "discriminator": "discriminator",
   "properties": {
     "Suite Name": {
