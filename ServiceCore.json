@@ -16,6 +16,10 @@
       "description": "The id of the profile to extrude.",
       "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
     },
+    "Direction": {
+      "description": "The direction in which to extrude.",
+      "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+    },    
     "Elevation": {
       "description": "The elevation of the service core.",
       "type": "number",
@@ -25,10 +29,6 @@
       "description": "The height of the service core.",
       "type": "number",
       "minimum": 0
-    },
-    "Direction": {
-      "description": "The direction in which to extrude.",
-      "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
     },
     "Rotation": {
       "description": "The rotation in degrees of the service core.",
