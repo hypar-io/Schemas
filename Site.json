@@ -20,6 +20,7 @@
             "description": "The Area of the site.",
             "type": "number",
             "minimum": 0
+        }
     },
     "additionalProperties": false
 }
