@@ -1,0 +1,57 @@
+{
+    "$id": "https://hypar.io/BuildingBlocks/schemas/DepartmentPerFloorData.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "DepartmentInformationPerFloor",
+    "title": "DepartmentPerFloorData",
+    "x-namespace": "Elements",
+    "type": [
+        "object",
+        "null"
+    ],
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "required": [
+        "discriminator",
+        "Ranges"
+    ],
+    "additionalProperties": false,
+    "discriminator": "discriminator",
+    "properties": {
+        "discriminator": {
+            "type": "string"
+        },
+        "FloorSqFt_Office": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "FloorSqFt_Residential": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "FloorSqFt_Retail": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "FloorSqFt_Mechanical": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "FloorSqFt_Parking": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        }
+    }
+}
