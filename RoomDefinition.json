@@ -32,15 +32,15 @@
     "Room Area": {
       "description": "Desired area of the room.",
       "type": "number"
+    }, 
+    "Room Dimension Ratio": {
+      "description": "Desired ratio of the X to Y dimensions of the room.",
+      "type": "number"
     },
     "Room Height": {
       "description": "Desired height of the room.",
       "type": "number"
-    },    
-    "Room Dimension Ratio": {
-      "description": "Desired ratio of the X to Y dimensions of the room.",
-      "type": "number"
-    }
+    },     
   },
   "additionalProperties": false
 }
