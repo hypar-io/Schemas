@@ -10,15 +10,15 @@
   "discriminator": "discriminator",
   "properties": {
     "Suite Name": {
-      "description": "Name of the suite assigned to the room.",
+      "description": "Name of the suite to be assigned to the room.",
       "type": "string"
     },
     "Suite Number": {
-      "description": "Number of the suite assigned to the room.",
+      "description": "Number of the suite to be assigned to the room.",
       "type": "string"
     },
     "Room Department": {
-      "description": "Name of the department assigned to the room.",
+      "description": "Name of the department to be assigned to the room.",
       "type": "string"
     },
     "Room Name": {
