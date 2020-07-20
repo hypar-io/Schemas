@@ -42,7 +42,7 @@
       "description": "Desired height of the room.",
       "type": "number",
       "unit_type": "length"
-    },     
+    }
   },
   "additionalProperties": false
 }
