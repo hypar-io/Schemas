@@ -5,26 +5,31 @@
     "title": "Roof",
     "x-namespace": "Elements",
     "type": ["object", "null"],
-    "allOf": [{"$ref": "https://hypar.io/Schemas/Element.json"}],  
+    "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
     "required": ["discriminator", "Elevation", "Perimeter"],
     "discriminator": "discriminator",
     "properties": {
         "discriminator": {
           "type": "string"
-        },      
-        "Area": {
-          "description": "The area of the Roof.",
-          "type": "number",
-          "minimum": 0
-        },        
+        },  
+        "Perimeter": {
+          "description": "The perimeter of the Roof.",
+          "$ref": "https://raw.githubusercontent.com/hypar-io/Elements/master/Schemas/Geometry/Polygon.json"
+        },                
         "Elevation": {
           "description": "The elevation of the Roof.",
           "type": "number",
           "minimum": 0
         },
-        "Perimeter": {
-          "description": "The perimeter of the Roof.",
-          "$ref": "https://raw.githubusercontent.com/hypar-io/Elements/master/Schemas/Geometry/Polygon.json"
+        "Thickness": {
+          "description": "The elevation of the Roof.",
+          "type": "number",
+          "minimum": 0
+        },        
+        "Area": {
+          "description": "The area of the Roof.",
+          "type": "number",
+          "minimum": 0
         }             
     },
     "additionalProperties": false
