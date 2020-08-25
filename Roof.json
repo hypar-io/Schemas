@@ -13,8 +13,8 @@
           "type": "string"
         },  
         "Perimeter": {
-          "description": "The perimeter of the Roof and its openings.",
-          "$ref": "https://raw.githubusercontent.com/hypar-io/Elements/master/Schemas/Geometry/Profile.json"
+          "description": "The mesh representing the Roof surface.",
+          "$ref": "https://raw.githubusercontent.com/hypar-io/Elements/master/Schemas/Geometry/Mesh.json"
         },                
         "Elevation": {
           "description": "The elevation of the Roof.",
