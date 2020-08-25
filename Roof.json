@@ -11,11 +11,7 @@
     "properties": {
         "discriminator": {
           "type": "string"
-        },  
-        "Surface": {
-          "description": "The mesh representing the Roof surface.",
-          "$ref": "https://raw.githubusercontent.com/hypar-io/Elements/master/Schemas/Geometry/Mesh.json"
-        },                
+        },              
         "Elevation": {
           "description": "The elevation of the Roof.",
           "type": "number",
