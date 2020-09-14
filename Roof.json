@@ -11,19 +11,39 @@
     "properties": {
         "discriminator": {
           "type": "string"
-        },              
+        },
+        "Envelope": {
+          "description": "Geometric boundary of the Roof system.",
+          "$ref": "https://hypar.io/Schemas/Mesh.json",
+          "minimum": 0
+        },             
+        "Topside": {
+          "description": "Top surface of the Roof",
+          "$ref": "https://hypar.io/Schemas/Mesh.json",
+          "minimum": 0
+        },      
+        "Underside": {
+          "description": "Bottom surface of the Roof",
+          "$ref": "https://hypar.io/Schemas/Mesh.json",
+          "minimum": 0
+        },                                    
         "Elevation": {
-          "description": "The elevation of the Roof.",
+          "description": "Elevation of the Roof's lowest underside point.",
           "type": "number",
           "minimum": 0
         },
+        "Highpoint": {
+          "description": "Elevation of the Roof's highest topside point.",
+          "type": "number",
+          "minimum": 0
+        },        
         "Thickness": {
-          "description": "The elevation of the Roof.",
+          "description": "The thickness of the Roof at its thinnest point between Topside surface and Underside surface.",
           "type": "number",
           "minimum": 0
         },        
         "Area": {
-          "description": "The area of the Roof.",
+          "description": "The area of the Roof Topside surface.",
           "type": "number",
           "minimum": 0
         }             
