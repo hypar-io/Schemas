@@ -13,20 +13,25 @@
           "type": "string"
         },
         "Envelope": {
-          "description": "Geometric boundary of the Roof system.",
+          "description": "Boundary of the Roof system as a Mesh.",
           "$ref": "https://hypar.io/Schemas/Mesh.json",
           "minimum": 0
         },             
         "Topside": {
-          "description": "Top surface of the Roof",
+          "description": "Top surface of the Roof as a Mesh.",
           "$ref": "https://hypar.io/Schemas/Mesh.json",
           "minimum": 0
         },      
         "Underside": {
-          "description": "Bottom surface of the Roof",
+          "description": "Bottom surface of the Roof as a Mesh.",
           "$ref": "https://hypar.io/Schemas/Mesh.json",
           "minimum": 0
-        },                                    
+        },     
+        "Perimeter": {
+          "description": "Bottom perimeter of the Roof as a Polygon.",
+          "$ref": "https://hypar.io/Schemas/Mesh.json",
+          "minimum": 0
+        },                                        
         "Elevation": {
           "description": "Elevation of the Roof's lowest underside point.",
           "type": "number",
