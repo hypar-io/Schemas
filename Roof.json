@@ -23,11 +23,7 @@
         "Underside": {
           "description": "Bottom surface of the Roof as a Mesh.",
           "$ref": "https://hypar.io/Schemas/Mesh.json"
-        },     
-        "Perimeter": {
-          "description": "Bottom perimeter of the Roof as a Polygon.",
-          "$ref": "https://hypar.io/Schemas/Polygon.json"
-        },                                        
+        },                                   
         "Elevation": {
           "description": "Elevation of the Roof's lowest underside point.",
           "type": "number",
