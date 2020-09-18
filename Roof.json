@@ -14,19 +14,19 @@
         },
         "Envelope": {
           "description": "Boundary of the Roof system as a Mesh.",
-          "$ref": "https://hypar.io/Schemas/Mesh.json",
+          "$ref": "https://hypar.io/Schemas/Mesh.json"
         },             
         "Topside": {
           "description": "Top surface of the Roof as a Mesh.",
-          "$ref": "https://hypar.io/Schemas/Mesh.json",
+          "$ref": "https://hypar.io/Schemas/Mesh.json"
         },      
         "Underside": {
           "description": "Bottom surface of the Roof as a Mesh.",
-          "$ref": "https://hypar.io/Schemas/Mesh.json",
+          "$ref": "https://hypar.io/Schemas/Mesh.json"
         },     
         "Perimeter": {
           "description": "Bottom perimeter of the Roof as a Polygon.",
-          "$ref": "https://hypar.io/Schemas/Mesh.json",
+          "$ref": "https://hypar.io/Schemas/Polygon.json"
         },                                        
         "Elevation": {
           "description": "Elevation of the Roof's lowest underside point.",
