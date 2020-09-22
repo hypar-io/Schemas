@@ -26,7 +26,7 @@
         },       
         "Perimeter": {
           "description": "Bottom perimter of the Roof as a Polygon.",
-          "$ref": "https://hypar.io/Schemas/Polygon.json"
+          "$ref": "https://raw.githubusercontent.com/hypar-io/Elements/master/Schemas/Geometry/Polygon.json"
         },                                     
         "Elevation": {
           "description": "Elevation of the Roof's lowest underside point.",
