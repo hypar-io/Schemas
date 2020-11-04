@@ -1,0 +1,40 @@
+{
+    "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/master/NYCDaylightEvaluationVantageStreetTest.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A vantage street for use with NYC ZR 81-27.",
+    "title": "DaylightEvaluationVantageStreet",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "required": [
+        "Name"
+    ],
+    "discriminator": "discriminator",
+    "properties": {
+        "Name": {
+            "description": "Vantage street name.",
+            "type": "string"
+        },
+        "FrontLotLine": {
+            "description": "The front lot line of the vantage street.",
+            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        },
+        "Centerline": {
+            "description": "The calculated vantage point centerline. For a 75ft street, this will be 40ft back from the front lot line.",
+            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        },
+        "Length": {
+            "description": "The length of the centerline and front lot line.",
+            "type": "number"
+        },
+        "DaylightScore": {
+            "description": "The street score is the arithmetic mean of all the scores from all vantage points along a vantage street. When a zoning lot fronts on only one street, the street score is also the overall score. Where a zoning lot has more than one street frontage along any one vantage street, the street score is the average of all those individual street frontage scores computed pursuant to paragraph (b) of Section 81-275 (Special conditions), weighted by the lengths of all those street frontages. Where a zoning lot fronts on more than one street, the overall score is the average of the street scores, weighted by the length of their respective vantage street frontages.",
+            "type": "number"
+        }
+    },
+    "additionalProperties": false
+}
