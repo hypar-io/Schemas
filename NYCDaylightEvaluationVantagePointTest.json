@@ -15,7 +15,7 @@
     ],
     "discriminator": "discriminator",
     "properties": {
-        "Name": {
+        "VantageName": {
             "description": "Vantage point name.",
             "type": "string"
         },
