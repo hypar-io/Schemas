@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/master/NYCDaylightEvaluationVantageStreetTest.json",
+    "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/daylight-evaluation/NYCDaylightEvaluationVantageStreetTest.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A vantage street for use with NYC ZR 81-27.",
     "title": "DaylightEvaluationVantageStreet",
