@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/daylight-evaluation/NYCDaylightEvaluationVantagePointTest.json",
+    "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/daylight-evaluation/NYCDaylightEvaluationVantagePoint.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A vantage point for use with NYC ZR 81-27.",
     "title": "DaylightEvaluationVantagePoint",
