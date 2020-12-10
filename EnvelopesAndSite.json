@@ -1,0 +1,29 @@
+{
+    "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/daylight-evaluation/EnvelopesAndSite.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "An object containing envelopes with their corresponding sites.",
+    "title": "EnvelopesAndSite",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "required": [],
+    "discriminator": "discriminator",
+    "properties": {
+        "Envelopes": {
+            "description": "Envelopes belonging to a site",
+            "type": "array",
+            "items": {
+                "$ref": "https://prod-api.hypar.io/schemas/Envelope"
+            }
+        },
+        "Site": {
+            "description": "Corresponding site for envelopes",
+            "$ref": "https://raw.githubusercontent.com/hypar-io/Schemas/master/Site.json"
+        }
+    },
+    "additionalProperties": false
+}
