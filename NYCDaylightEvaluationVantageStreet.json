@@ -23,9 +23,9 @@
             "description": "How many vantage points were generated for this street.",
             "type": "number"
         },
-        "Centerline": {
-            "description": "Centerline of street",
-            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        "CenterlineDistance": {
+            "description": "Calculated centerline distance of street",
+            "type": "number"
         }
     },
     "additionalProperties": false
