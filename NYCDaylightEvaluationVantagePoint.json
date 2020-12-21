@@ -15,10 +15,6 @@
     ],
     "discriminator": "discriminator",
     "properties": {
-        "VantageName": {
-            "description": "Vantage point name.",
-            "type": "string"
-        },
         "Position": {
             "description": "The position of the vantage point.",
             "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
