@@ -1,0 +1,32 @@
+{
+    "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/daylight-evaluation/NYCDaylightEvaluationVantageStreet.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A vantage street for use with NYC ZR 81-27.",
+    "title": "DaylightEvaluationVantageStreet",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "required": [
+        "Position"
+    ],
+    "discriminator": "discriminator",
+    "properties": {
+        "Score": {
+            "description": "Score for the street.",
+            "type": "number"
+        },
+        "NumberOfVantagePoints": {
+            "description": "How many vantage points were generated for this street.",
+            "type": "number"
+        },
+        "Centerline": {
+            "description": "Centerline of street",
+            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        }
+    },
+    "additionalProperties": false
+}
