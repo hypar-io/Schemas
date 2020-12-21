@@ -42,6 +42,10 @@
         "DaylightScore": {
             "description": "Compute the remaining daylight score from paragraph (f) of this Section, as a percentage of the available daylight from paragraph (e) of this Section. The percentage is the daylight score for the proposed building from that vantage point.",
             "type": "number"
+        },
+        "StreetScore": {
+            "description": "The score of the street that a vantage point is on. Vantage points on the same street will have the same street score.",
+            "type": "number"
         }
     },
     "additionalProperties": false
