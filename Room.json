@@ -48,8 +48,8 @@
       "description": "The rotation in degrees of the room.",
       "type": "number"
     },    
-    "Level": {
-      "description": "The level of the room.",
+    "Level Name": {
+      "description": "The level name of the room.",
       "type": "string"
     },   
     "Elevation": {
